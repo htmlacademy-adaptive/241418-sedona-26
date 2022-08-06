@@ -2,14 +2,19 @@
   display: flex;
   height: 56px;
   justify-content: space-between;
+  position: relative;
 }
+
+// .main-header__wrapper--closed {
+//   display: none;
+// }
 
 .main-header__logo {
   display: block;
   margin-left: 67px;
 }
 
-.main-header__menu {
+.main-header__toggle-button {
   border: none;
   background-color: transparent;
   width: 23px;
@@ -17,12 +22,20 @@
   margin: 17px 20px;
   padding: 0;
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.menu__icon {
+.main-header__toggle-icon {
   fill: @basic;
 }
 
-.menu__icon--hover {
+.main-header__toggle-icon:hover {
   opacity: 0.6;
 }
+
+.main-header__toggle-icon:active {
+  opacity: 0.3;
+}
+
