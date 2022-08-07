@@ -1,0 +1,37 @@
+.list-link {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: @basic;
+  text-align: center;
+  color: @white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 17px 10px 12px 10px;
+  margin-bottom: 1px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.list-link--first {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+
+.list-link--last {
+  box-shadow: none;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.2) 100%);
+  margin-bottom: 0;
+}
+
+.list-link:hover {
+  color: @basic;
+}
+
+.list-link:active {
+  color: #b2b2b2;
+}
+
+.list-link:current {
+  color: #766357;
+}
