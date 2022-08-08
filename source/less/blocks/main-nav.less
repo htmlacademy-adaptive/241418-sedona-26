@@ -23,8 +23,34 @@
   display: none;
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: @white;
+    position: relative;
+  }
+
+  .main-nav__toggle-button,
+  .main-nav__toggle-button--close {
+    display: none;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .main-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: @white;
+    position: relative;
+  }
+
+  .main-nav__toggle-button,
+  .main-nav__toggle-button--close {
+    display: none;
+  }
 }

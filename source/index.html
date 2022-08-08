@@ -3,22 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sedona</title>
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper main-header__wrapper--closed">
-      <img class="main-header__logo" src="./img/header/logotype-sedona.svg" width="185" height="96"
-        alt="логотип седона.">
-      <button class="main-header__toggle-button" type="button">
-        <svg class="main-header__toggle-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
-        </svg>
-      </button>
-    </div>
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle-button main-nav__toggle-button--close component-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -34,6 +25,20 @@
             фото и видео
           </a>
         </li>
+      </ul>
+    </nav>
+    <div class="main-header__wrapper main-header__wrapper--closed">
+      <img class="main-header__logo" src="./img/header/logotype-sedona.svg" width="185" height="96"
+        alt="логотип седона.">
+      <button class="main-header__toggle-button" type="button">
+        <svg class="main-header__toggle-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
+        </svg>
+      </button>
+    </div>
+    <nav class="main-nav main-nav--right main-nav--closed">
+      <ul class="main-nav__list">
         <li class="list-item">
           <a class="list-link" href="form.html">
             форма отзыва
