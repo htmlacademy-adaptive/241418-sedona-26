@@ -6,25 +6,28 @@
   flex-direction: column;
 }
 
-.basic-list__item {
+.basic-list__item--noimage {
   display: flex;
   flex-direction: column;
   background-color: @basic;
+  background-size: cover;
   align-items: center;
+  order: 1;
 }
 
-.basic-list--first {
+.basic-list__item--first {
   min-height: 256px;
   background-image: url("../img/index/photo-city.jpg");
   background-repeat: no-repeat;
   display: inline-block;
 }
 
-.basic-list--second {
+.basic-list__item--second {
   min-height: 256px;
   background-image: url("../img/index/photo-bridge.jpg");
   background-repeat: no-repeat;
   display: inline-block;
+  background-size: cover;
 }
 
 .basic-list__item-title {
@@ -61,25 +64,29 @@
     flex-direction: row;
   }
 
-  .basic-list--first {
+  .basic-list__item--first {
     min-height: 256px;
-    width: 100%;
+    flex-basis: 66%;
     background-image: url("../img/index/photo-city.jpg");
     background-repeat: no-repeat;
   }
 
-  .basic-list--second {
+  .basic-list__item--second {
     min-height: 256px;
-    width: 100%;
+    flex-basis: 66%;
     background-image: url("../img/index/photo-bridge.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .basic-list__item {
+  .basic-list__item--noimage {
     display: flex;
+    flex-basis: 33%;
     flex-direction: column;
     background-color: @basic;
     align-items: center;
+    background-size: cover;
+    order: 0;
   }
 
   .basic-list__item-title {
@@ -116,25 +123,30 @@
     flex-direction: row;
   }
 
-  .basic-list--first {
+  .basic-list__item--first {
     min-height: 256px;
-    width: 100%;
+    flex-basis: 66%;
     background-image: url("../img/index/photo-city.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .basic-list--second {
+  .basic-list__item--second {
     min-height: 256px;
-    width: 100%;
+    flex-basis: 66%;
     background-image: url("../img/index/photo-bridge.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .basic-list__item {
+  .basic-list__item--noimage {
     display: flex;
+    flex-basis: 33%;
     flex-direction: column;
     background-color: @basic;
     align-items: center;
+    background-size: cover;
+    order: 0;
   }
 
   .basic-list__item-title {
