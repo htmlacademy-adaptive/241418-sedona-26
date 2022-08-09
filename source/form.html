@@ -3,22 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма обратной связи</title>
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper main-header__wrapper--closed">
-      <img class="main-header__logo" src="./img/header/logotype-sedona.svg" width="185" height="96"
-        alt="логотип седона.">
-      <button class="main-header__toggle-button" type="button">
-        <svg class="main-header__toggle-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
-        </svg>
-      </button>
-    </div>
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle-button main-nav__toggle-button--close component-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -34,6 +25,20 @@
             фото и видео
           </a>
         </li>
+      </ul>
+    </nav>
+    <div class="main-header__wrapper main-header__wrapper--closed">
+      <img class="main-header__logo" src="./img/header/logotype-sedona.svg" width="185" height="96"
+        alt="логотип седона.">
+      <button class="main-header__toggle-button" type="button">
+        <svg class="main-header__toggle-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
+        </svg>
+      </button>
+    </div>
+    <nav class="main-nav main-nav--right main-nav--closed">
+      <ul class="main-nav__list">
         <li class="list-item">
           <a class="list-link" href="form.html">
             форма отзыва
@@ -47,7 +52,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main-form">
+  <main class="main-container">
     <div class="main-promo">
       <h1 class="visually-hidden">форма отзыва</h1>
       <svg class="main-promo__icon" width="229" height="39" aria-hidden="true" focusable="false" viewBox="0 0 229 39"
@@ -99,7 +104,7 @@
               <span class="form__field-background-icon--mail"></span>
             </div>
           </fieldset>
-          <fieldset class="form__section">
+          <fieldset class="form__section form__section--radio">
             <legend class="form__section-title">ваше общее впечатление:</legend>
             <label class="form__radio">
               <input class="form__radio-input" type="radio" name="impression" value="goog-mark" checked>
@@ -117,7 +122,7 @@
               <span class="form__radio-label">Затрудняюсь ответить</span>
             </label>
           </fieldset>
-          <fieldset class="form__section">
+          <fieldset class="form__section form__section--checkbox">
             <legend class="form__section-title">посещенные достопримечательности:</legend>
             <label class="form__checkbox">
               <input class="form__checkbox-input" type="checkbox" name="visited-places" value="evils-bridge" checked>
@@ -140,7 +145,7 @@
               <span class="form__checkbox-label">Красные скалы</span>
             </label>
           </fieldset>
-          <fieldset class="form__section">
+          <fieldset class="form__section form__section--textarea">
             <legend class="form__section-title">опишите свои эмоции:</legend>
             <textarea class="form__field-input form__field-input--text" name="describe-emotions"
               placeholder="Опишите подробно все свои восторги"></textarea>
