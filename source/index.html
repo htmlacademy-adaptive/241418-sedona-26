@@ -3,22 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sedona</title>
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper main-header__wrapper--closed">
-      <img class="main-header__logo" src="./img/header/logotype-sedona.svg" width="185" height="96"
-        alt="логотип седона.">
-      <button class="main-header__toggle-button" type="button">
-        <svg class="main-header__toggle-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
-        </svg>
-      </button>
-    </div>
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle-button main-nav__toggle-button--close component-button" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -34,6 +25,20 @@
             фото и видео
           </a>
         </li>
+      </ul>
+    </nav>
+    <div class="main-header__wrapper main-header__wrapper--closed">
+      <img class="main-header__logo" src="./img/header/logotype-sedona.svg" width="185" height="96"
+        alt="логотип седона.">
+      <button class="main-header__toggle-button" type="button">
+        <svg class="main-header__toggle-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
+        </svg>
+      </button>
+    </div>
+    <nav class="main-nav main-nav--right main-nav--closed">
+      <ul class="main-nav__list">
         <li class="list-item">
           <a class="list-link" href="form.html">
             форма отзыва
@@ -63,15 +68,15 @@
         <p class="reasons__description">
           pассмотрим 5 причин, по которым cедона круче, чем гранд каньон!</p>
         <ul class="reasons__list basic-list">
-          <li class="basic-list__item">
+          <li class="basic-list__item basic-list__item--noimage">
             <h3 class="basic-list__item-title">
               настоящий городок
             </h3>
             <p class="basic-list__item-description">— №1 —</p>
             <p class="basic-list__item-description">
               седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="basic-list__item-image" src="./img/index/photo-city.jpg" width="320" height="260"
-              alt="город седона.">
+          </li>
+          <li class="basic-list__item basic-list__item--first">
           </li>
         </ul>
         <ul class="reasons__list entertainment-list">
@@ -127,15 +132,15 @@
           </li>
         </ul>
         <ul class="reasons__list basic-list">
-          <li class="basic-list__item">
+          <li class="basic-list__item basic-list__item--second">
+          </li>
+          <li class="basic-list__item basic-list__item--noimage">
             <h3 class="basic-list__item-title">
               там есть мост дьявола
             </h3>
             <p class="basic-list__item-description">— №2 —</p>
             <p class="basic-list__item-description">
               да, по нему можно пройти! если вы осмелитесь, конечно</p>
-            <img class="basic-list__item-image" src="./img/index/photo-bridge.jpg" width="320" height="260"
-              alt="мост дьявола.">
           </li>
         </ul>
         <ul class="reasons__list detailed-list">
@@ -174,7 +179,6 @@
     <section class="map">
       <div class="map__wrapper">
         <h2 class="visually-hidden">карта</h2>
-        <img class="map__image" src="./img/index/map.jpg" width="320" height="350" alt="карта.">
         <svg class="map__marker" width="27" height="27" aria-hidden="true" focusable="false" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M13.5 27C20.956 27 27 20.956 27 13.5S20.956 0 13.5 0 0 6.044 0 13.5 6.044 27 13.5 27Z" fill="#fff" />

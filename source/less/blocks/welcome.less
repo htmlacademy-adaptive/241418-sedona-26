@@ -2,8 +2,44 @@
   height: 389px;
   background-image: url("../img/index/index-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .welcome__logo {
-  margin: 90px 19px 85px;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__wrapper {
+    max-height: 518px;
+    background-image: url("../img/index/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__wrapper {
+    max-height: 518px;
+    background-image: url("../img/index/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome__logo {
+    margin: 0;
+  }
 }

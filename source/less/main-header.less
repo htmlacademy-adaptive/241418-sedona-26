@@ -1,8 +1,8 @@
 .main-header {
   display: flex;
   height: 56px;
-  justify-content: space-between;
   position: relative;
+  justify-content: space-around;
 }
 
 // .main-header__wrapper--closed {
@@ -11,7 +11,7 @@
 
 .main-header__logo {
   display: block;
-  margin-left: 67px;
+  margin: 0 auto;
 }
 
 .main-header__toggle-button {
@@ -37,4 +37,36 @@
 
 .main-header__toggle-icon:active {
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    display: flex;
+    height: 56px;
+  }
+
+  .main-header__logo {
+    display: block;
+    margin: 0;
+  }
+
+  .main-header__toggle-button {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    display: flex;
+    height: 56px;
+  }
+
+  .main-header__logo {
+    display: block;
+    margin: 0;
+  }
+
+  .main-header__toggle-button {
+    display: none;
+  }
 }
