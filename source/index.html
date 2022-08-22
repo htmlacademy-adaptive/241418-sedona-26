@@ -13,10 +13,21 @@
     <div class="main-header__wrapper main-header__wrapper--closed">
       <img class="main-header__logo" src="./img/header/logotype-sedona.svg" width="185" height="96"
         alt="логотип седона.">
-      <nav class="main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <button class="main-header__toggle main-header__toggle--opened" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span class="main-header__toggle-open"><svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 0H0v4h24V0ZM24 8H0v4h24V8ZM24 16H0v4h24v-4Z" />
+          </svg>
+        </span>
+        <span class="main-header__toggle-close">
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" />
+          </svg>
+        </span>
+      </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="list-item list-item--current">
             <a href="/">
@@ -231,6 +242,7 @@
       </div>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
