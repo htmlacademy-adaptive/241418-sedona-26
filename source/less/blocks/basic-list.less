@@ -12,22 +12,26 @@
   background-color: @basic;
   background-size: cover;
   align-items: center;
-  order: 1;
+  min-height: 191px;
 }
 
 .basic-list__item--first {
-  min-height: 256px;
+  min-height: 260px;
+  width: 100%;
   background-image: url("../img/index/photo-city.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
 }
 
 .basic-list__item--second {
-  min-height: 256px;
+  min-height: 260px;
+  width: 100%;
   background-image: url("../img/index/photo-bridge.jpg");
   background-repeat: no-repeat;
   display: inline-block;
   background-size: cover;
+  order: 1;
 }
 
 .basic-list__item-title {
@@ -36,9 +40,10 @@
   font-weight: 700;
   color: @white;
   text-transform: uppercase;
-  padding: 20px 25px;
+  padding: 5px 25px 8px;
   text-align: center;
   margin: 0;
+  margin-top: 33px;
 }
 
 .basic-list__item-description {
@@ -47,11 +52,15 @@
   font-weight: 700;
   color: @white;
   text-transform: uppercase;
-  padding: 20px 25px;
+  padding: 5px 25px;
   text-align: center;
   margin: 0;
+  margin-bottom: 8px;
 }
 
+.basic-list__item-description:nth-last-of-type(1) {
+  margin-bottom: 30px;
+}
 
 @media (min-width: @tablet-width) {
   .basic-list {
@@ -66,17 +75,18 @@
 
   .basic-list__item--first {
     min-height: 256px;
-    flex-basis: 66%;
+    flex-basis: 67%;
     background-image: url("../img/index/photo-city.jpg");
     background-repeat: no-repeat;
   }
 
   .basic-list__item--second {
     min-height: 256px;
-    flex-basis: 66%;
+    flex-basis: 67%;
     background-image: url("../img/index/photo-bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    order: 0;
   }
 
   .basic-list__item--noimage {
@@ -86,7 +96,6 @@
     background-color: @basic;
     align-items: center;
     background-size: cover;
-    order: 0;
   }
 
   .basic-list__item-title {
@@ -125,7 +134,7 @@
 
   .basic-list__item--first {
     min-height: 256px;
-    flex-basis: 66%;
+    flex-basis: 67%;
     background-image: url("../img/index/photo-city.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +142,7 @@
 
   .basic-list__item--second {
     min-height: 256px;
-    flex-basis: 66%;
+    flex-basis: 67%;
     background-image: url("../img/index/photo-bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,7 +155,6 @@
     background-color: @basic;
     align-items: center;
     background-size: cover;
-    order: 0;
   }
 
   .basic-list__item-title {
