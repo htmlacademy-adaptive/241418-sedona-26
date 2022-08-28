@@ -13,28 +13,6 @@
   transform: none;
 }
 
-.main-nav__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav__list a {
-  position: relative;
-  display: block;
-  padding: 17px 20px;
-  padding-bottom: 12px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: @white;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  background-color: @basic;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
 @media (min-width: @tablet-width) {
   .main-nav {
     position: absolute;
@@ -49,50 +27,6 @@
 
   .main-nav--opened {
     transform: none;
-  }
-
-  .main-nav__list {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 900px;
-    display: grid;
-    grid-template-columns: 145px 145px auto 145px 145px;
-    min-height: 56px;
-    background-color: @white;
-    align-items: center;
-  }
-
-  .list-item:nth-of-type(1) {
-    grid-column: 1 / 2;
-  }
-
-  .list-item:nth-of-type(2) {
-    grid-column: 2 / 3;
-  }
-
-  .list-item:nth-of-type(3) {
-    grid-column: 4 / 5;
-  }
-
-  .list-item:nth-of-type(4) {
-    grid-column: 5 / 6;
-  }
-
-  .main-nav__list a {
-    position: relative;
-    display: block;
-    padding: 18px 20px;
-    padding-bottom: 17px;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 700;
-    color: @black;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    background-color: inherit;
-    box-shadow: none;
   }
 }
 
@@ -110,49 +44,5 @@
 
   .main-nav--opened {
     transform: none;
-  }
-
-  .main-nav__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: 240px 240px auto 240px 240px;
-    min-height: 56px;
-    background-color: @white;
-    align-items: center;
-  }
-
-  .list-item:nth-of-type(1) {
-    grid-column: 1 / 2;
-  }
-
-  .list-item:nth-of-type(2) {
-    grid-column: 2 / 3;
-  }
-
-  .list-item:nth-of-type(3) {
-    grid-column: 4 / 5;
-  }
-
-  .list-item:nth-of-type(4) {
-    grid-column: 5 / 6;
-  }
-
-  .main-nav__list a {
-    position: relative;
-    display: block;
-    padding: 18px 20px;
-    padding-bottom: 17px;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 700;
-    color: @black;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    background-color: inherit;
-    box-shadow: none;
   }
 }
