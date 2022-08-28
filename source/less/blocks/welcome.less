@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -11,6 +12,16 @@
 
 .welcome__logo {
   margin: 0;
+  margin-top: 5px;
+}
+
+.welcome__decoration-icon {
+  width: 100%;
+  min-height: 57px;
+  position: absolute;
+  background-position: center;
+  bottom: -186px;
+  background-image: url("../img/index/welcome-decoration-icon.svg");
 }
 
 @media (min-width: @tablet-width) {
@@ -27,6 +38,15 @@
   .welcome__logo {
     margin: 0;
   }
+
+  .welcome__decoration-icon {
+    width: 100%;
+    min-height: 57px;
+    position: absolute;
+    background-position: center;
+    bottom: -315px;
+    background-image: url("../img/index/welcome-decoration-icon.svg");
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -42,5 +62,14 @@
 
   .welcome__logo {
     margin: 0;
+  }
+
+  .welcome__decoration-icon {
+    max-width: 1200px;
+    min-height: 57px;
+    position: absolute;
+    background-position: center;
+    bottom: -315px;
+    background-image: url("../../img/index/welcome-decoration-icon.svg");
   }
 }
