@@ -5,23 +5,25 @@
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .welcome__logo {
   margin: 0;
-  margin-top: 5px;
+  margin-top: 90px;
 }
 
 .welcome__decoration-icon {
   width: 100%;
-  min-height: 57px;
-  position: absolute;
-  background-position: center;
-  bottom: -186px;
+  height: 57px;
+  display: block;
+  padding: 0;
   background-image: url("../img/index/welcome-decoration-icon.svg");
+  background-position: bottom;
 }
 
 @media (min-width: @tablet-width) {
@@ -31,21 +33,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
   }
 
   .welcome__logo {
     margin: 0;
+    margin-top: 90px;
   }
 
   .welcome__decoration-icon {
     width: 100%;
-    min-height: 57px;
-    position: absolute;
-    background-position: center;
-    bottom: -315px;
+    height: 57px;
+    display: block;
+    padding: 0;
     background-image: url("../img/index/welcome-decoration-icon.svg");
+    background-position: bottom;
   }
 }
 
@@ -56,20 +63,25 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
   }
 
   .welcome__logo {
     margin: 0;
+    margin-top: 90px;
   }
 
   .welcome__decoration-icon {
-    max-width: 1200px;
-    min-height: 57px;
-    position: absolute;
-    background-position: center;
-    bottom: -315px;
-    background-image: url("../../img/index/welcome-decoration-icon.svg");
+    width: 100%;
+    height: 57px;
+    display: block;
+    padding: 0;
+    background-image: url("../img/index/welcome-decoration-icon.svg");
+    background-position: bottom;
   }
 }

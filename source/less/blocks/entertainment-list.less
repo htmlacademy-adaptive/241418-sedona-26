@@ -2,7 +2,7 @@
   margin: 0;
   padding: 23px 18px;
   list-style: none;
-  min-height: 416px;
+  min-height: 130px;
   box-sizing: border-box;
 }
 
@@ -10,6 +10,30 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 15px;
+}
+
+.entertainment-list__item-icon-home {
+  background-image: url("../img/index/home-icon.svg");
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entertainment-list__item-icon-burger {
+  background-image: url("../img/index/burger-icon.svg");
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entertainment-list__item-icon-present {
+  background-image: url("../img/index/present-icon.svg");
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .entertainment-list__item-title {
@@ -40,6 +64,7 @@
     padding: 0;
     list-style: none;
     display: flex;
+    min-height: 330px;
   }
 
   .entertainment-list__item {
@@ -48,8 +73,35 @@
     flex-direction: column;
     flex-basis: 33%;
     align-items: center;
-    justify-content: center;
-    padding: 60px 35px;
+    justify-content: flex-start;
+    padding: 55px 35px 20px;
+  }
+
+  .entertainment-list__item-icon-home {
+    background-image: url("../img/index/home-icon.svg");
+    width: 75px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+  }
+
+  .entertainment-list__item-icon-burger {
+    background-image: url("../img/index/burger-icon.svg");
+    width: 75px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+  }
+
+  .entertainment-list__item-icon-present {
+    background-image: url("../img/index/present-icon.svg");
+    width: 75px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
   }
 
   .entertainment-list__item-title {
@@ -61,7 +113,7 @@
     padding: 0;
     text-align: center;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .entertainment-list__item-description {
@@ -78,6 +130,8 @@
 
   .entertainment-list__item-icon {
     margin-bottom: 20px;
+    width: fit-content;
+    height: fit-content;
   }
 }
 
