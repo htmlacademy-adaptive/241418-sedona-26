@@ -8,6 +8,21 @@
 .detailed-list__item {
   margin: 0;
   padding: 24px 8px;
+  position: relative;
+}
+
+.detailed-list__item::after {
+  border-bottom: 1px #d6d6d6 solid;
+  content: "";
+  min-width: 284px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.detailed-list__item:nth-last-child(1)::after {
+  border-bottom: none;
 }
 
 .detailed-list__item-title {
