@@ -111,7 +111,15 @@
   right: 0;
 }
 
-.form__radio,
+.form__radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+  flex-wrap: wrap;
+  min-width: 248px;
+}
+
 .form__checkbox {
   display: flex;
   align-items: center;
@@ -241,7 +249,7 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
@@ -252,13 +260,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-bottom: 50px;
+    min-width: 324px;
   }
 
   .form__section--name,
   .form__section--contacts {
     min-width: 280px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -266,8 +274,7 @@
     margin-bottom: 50px;
   }
 
-  .form__section--radio,
-  .form__section--checkbox {
+  .form__section--radio {
     min-width: 280px;
     margin: 0 auto;
     padding: 0;
@@ -275,7 +282,18 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 34px;
+  }
+
+  .form__section--checkbox {
+    min-width: 648px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 34px;
   }
 
   .form__section--textarea {
@@ -290,9 +308,9 @@
     font-weight: 700;
     color: @black;
     text-transform: uppercase;
-    padding: 10px 10px 5px 0;
+    padding: 10px 0 10px 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-align: center;
   }
 
@@ -318,7 +336,7 @@
     line-height: 26px;
     font-weight: 700;
     color: @black;
-    margin-bottom: 16px;
+    margin-bottom: 7px;
   }
 
   .form__section--contacts {
@@ -358,8 +376,7 @@
   .form__radio {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
-    margin-left: 30px;
+    margin: 10px 10px 5px 37px;
     position: relative;
     flex-wrap: wrap;
     min-width: 248px;
@@ -368,11 +385,13 @@
   .form__checkbox {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
-    margin-left: 45px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 32px;
     position: relative;
     flex-wrap: wrap;
-    min-width: 248px;
+    width: 224px;
+    box-sizing: border-box;
   }
 
   .form__radio-input {
