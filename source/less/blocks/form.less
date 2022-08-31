@@ -117,7 +117,7 @@
   margin-bottom: 16px;
   position: relative;
   flex-wrap: wrap;
-  min-width: 248px;
+  width: 248px;
 }
 
 .form__checkbox {
@@ -126,7 +126,7 @@
   margin-bottom: 16px;
   position: relative;
   flex-wrap: wrap;
-  min-width: 248px;
+  width: 248px;
 }
 
 .form__radio-input {
@@ -260,17 +260,18 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    min-width: 324px;
+    min-width: 280px;
   }
 
   .form__section--name,
   .form__section--contacts {
-    min-width: 280px;
+    width: 280px;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 50px;
   }
 
@@ -286,14 +287,17 @@
   }
 
   .form__section--checkbox {
-    min-width: 648px;
+    width: 648px;
     margin: 0;
     padding: 0;
+    padding-left: 80px;
+    padding-right: 52px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 34px;
+    margin-left: -32px;
+    margin-bottom: 23px;
   }
 
   .form__section--textarea {
@@ -312,6 +316,14 @@
     margin: 0;
     margin-bottom: 5px;
     text-align: center;
+  }
+
+  .form__section--name .form__section-title {
+    margin-left: 21px;
+  }
+
+  .form__section--contacts .form__section-title {
+    margin-left: -20px;
   }
 
   .form__field-label {
@@ -379,15 +391,16 @@
     margin: 10px 10px 5px 37px;
     position: relative;
     flex-wrap: wrap;
-    min-width: 248px;
+    width: 248px;
   }
 
   .form__checkbox {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 32px;
+    margin-bottom: 9px;
+    margin-right: 4px;
+    margin-top: 10px;
+    margin-left: 32px;
     position: relative;
     flex-wrap: wrap;
     width: 224px;
@@ -477,6 +490,10 @@
     min-height: 160px;
     min-width: 100%;
     background-color: @light-gray;
+    margin: 0;
+    margin-top: 13px;
+    margin-bottom: 47px;
+    padding: 17px 10px 10px 17px;
   }
 
   .form__footer {
@@ -637,7 +654,7 @@
     margin-left: 30px;
     position: relative;
     flex-wrap: wrap;
-    min-width: 248px;
+    width: 248px;
   }
 
   .form__checkbox {
