@@ -3,9 +3,10 @@
   flex-wrap: wrap;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 38px 12px 32px;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .find-hotel__title {
@@ -14,7 +15,7 @@
   font-weight: 700;
   color: @black;
   text-transform: uppercase;
-  padding: 25px 25px;
+  padding: 3px 10px 15px;
   text-align: center;
   margin: 0;
 }
@@ -25,14 +26,18 @@
   font-weight: 400;
   color: @gray;
   text-transform: uppercase;
-  padding: 30px;
   text-align: center;
   margin: 0;
+  padding: 5px 15px;
+}
+
+.find-hotel__description br {
+  display: none;
 }
 
 .find-hotel__button {
-  min-width: 284px;
-  margin-bottom: 50px;
+  min-width: 82%;
+  margin: 26px 15px 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,20 +46,22 @@
     flex-wrap: wrap;
     width: 100%;
     margin: 0;
+    margin-top: 60px;
     padding: 0;
     align-items: center;
     justify-content: center;
   }
 
   .find-hotel__title {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 26px;
     font-weight: 700;
     color: @black;
     text-transform: uppercase;
-    padding: 25px 25px;
+    padding: 5px 25px;
     text-align: center;
     margin: 0;
+    margin-bottom: 5px;
   }
 
   .find-hotel__description {
@@ -63,14 +70,19 @@
     font-weight: 400;
     color: @gray;
     text-transform: uppercase;
-    padding: 30px 200px;
+    padding: 18px 177px;
     text-align: center;
     margin: 0;
   }
 
+  .find-hotel__description br {
+    display: none;
+  }
+
   .find-hotel__button {
-    min-width: 458px;
+    min-width: 430px;
     margin-bottom: 50px;
+    padding: 16px 14px;
   }
 }
 
@@ -86,14 +98,15 @@
   }
 
   .find-hotel__title {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 26px;
     font-weight: 700;
     color: @black;
     text-transform: uppercase;
-    padding: 25px 25px;
+    padding: 24px 25px 20px;
     text-align: center;
     margin: 0;
+    margin-top: 37px;
   }
 
   .find-hotel__description {
@@ -102,13 +115,18 @@
     font-weight: 400;
     color: @gray;
     text-transform: uppercase;
-    padding: 30px 400px;
+    padding: 10px 380px;
     text-align: center;
     margin: 0;
+    margin-bottom: 12px;
+  }
+
+  .find-hotel__description br {
+    display: block;
   }
 
   .find-hotel__button {
-    min-width: 458px;
-    margin-bottom: 50px;
+    min-width: 430px;
+    margin-bottom: 66px;
   }
 }

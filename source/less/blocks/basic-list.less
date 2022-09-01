@@ -12,22 +12,26 @@
   background-color: @basic;
   background-size: cover;
   align-items: center;
-  order: 1;
+  min-height: 191px;
 }
 
 .basic-list__item--first {
-  min-height: 256px;
+  min-height: 260px;
+  width: 100%;
   background-image: url("../img/index/photo-city.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
 }
 
 .basic-list__item--second {
-  min-height: 256px;
+  min-height: 260px;
+  width: 100%;
   background-image: url("../img/index/photo-bridge.jpg");
   background-repeat: no-repeat;
   display: inline-block;
   background-size: cover;
+  order: 1;
 }
 
 .basic-list__item-title {
@@ -36,9 +40,18 @@
   font-weight: 700;
   color: @white;
   text-transform: uppercase;
-  padding: 20px 25px;
+  padding: 5px 27px 8px 22px;
   text-align: center;
   margin: 0;
+  margin-top: 45px;
+}
+
+.basic-list__item-title--second {
+  margin-top: 35px;
+}
+
+.basic-list__item-title br {
+  display: none;
 }
 
 .basic-list__item-description {
@@ -47,11 +60,23 @@
   font-weight: 700;
   color: @white;
   text-transform: uppercase;
-  padding: 20px 25px;
+  padding: 4px 26px 5px 20px;
   text-align: center;
   margin: 0;
+  margin-bottom: 8px;
 }
 
+.basic-list__item-description br {
+  display: none;
+}
+
+.basic-list__item-description--first {
+  margin-bottom: 34px;
+}
+
+.basic-list__item-description--second {
+  margin-bottom: 29px;
+}
 
 @media (min-width: @tablet-width) {
   .basic-list {
@@ -66,17 +91,18 @@
 
   .basic-list__item--first {
     min-height: 256px;
-    flex-basis: 66%;
+    flex-basis: 67%;
     background-image: url("../img/index/photo-city.jpg");
     background-repeat: no-repeat;
   }
 
   .basic-list__item--second {
     min-height: 256px;
-    flex-basis: 66%;
+    flex-basis: 67%;
     background-image: url("../img/index/photo-bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    order: 0;
   }
 
   .basic-list__item--noimage {
@@ -86,7 +112,6 @@
     background-color: @basic;
     align-items: center;
     background-size: cover;
-    order: 0;
   }
 
   .basic-list__item-title {
@@ -95,9 +120,13 @@
     font-weight: 700;
     color: @white;
     text-transform: uppercase;
-    padding: 20px 25px;
+    padding: 40px 53px 10px 52px;
     text-align: center;
     margin: 0;
+  }
+
+  .basic-list__item-title br {
+    display: block;
   }
 
   .basic-list__item-description {
@@ -106,9 +135,17 @@
     font-weight: 400;
     color: @white;
     text-transform: uppercase;
-    padding: 20px 25px;
+    padding: 0 30px 25px;
     text-align: center;
     margin: 0;
+  }
+
+  .basic-list__item-description br {
+    display: block;
+  }
+
+  .basic-list__item-description:nth-last-of-type(1) {
+    margin-bottom: 0;
   }
 }
 
@@ -125,7 +162,7 @@
 
   .basic-list__item--first {
     min-height: 256px;
-    flex-basis: 66%;
+    flex-basis: 67%;
     background-image: url("../img/index/photo-city.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +170,7 @@
 
   .basic-list__item--second {
     min-height: 256px;
-    flex-basis: 66%;
+    flex-basis: 67%;
     background-image: url("../img/index/photo-bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,7 +183,6 @@
     background-color: @basic;
     align-items: center;
     background-size: cover;
-    order: 0;
   }
 
   .basic-list__item-title {
@@ -155,9 +191,13 @@
     font-weight: 700;
     color: @white;
     text-transform: uppercase;
-    padding: 20px 25px;
+    padding: 50px 92px 10px;
     text-align: center;
     margin: 0;
+  }
+
+  .basic-list__item-title br {
+    display: block;
   }
 
   .basic-list__item-description {
@@ -166,8 +206,12 @@
     font-weight: 400;
     color: @white;
     text-transform: uppercase;
-    padding: 20px 25px;
+    padding: 2px 63px 22px;
     text-align: center;
     margin: 0;
+  }
+
+  .basic-list__item-description br {
+    display: block;
   }
 }

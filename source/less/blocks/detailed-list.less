@@ -1,8 +1,28 @@
 .detailed-list {
   margin: 0;
-  padding: 26px 18px;
+  padding: 0 18px;
   list-style: none;
   background-color: #eeeeee;
+}
+
+.detailed-list__item {
+  margin: 0;
+  padding: 24px 8px;
+  position: relative;
+}
+
+.detailed-list__item::after {
+  border-bottom: 1px #d6d6d6 solid;
+  content: "";
+  min-width: 284px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.detailed-list__item:nth-last-child(1)::after {
+  border-bottom: none;
 }
 
 .detailed-list__item-title {
@@ -11,9 +31,13 @@
   font-weight: 700;
   color: @black;
   text-transform: uppercase;
-  padding: 20px 25px;
+  padding: 0 15px 10px;
   text-align: center;
   margin: 0;
+
+  & br {
+    display: none;
+  }
 }
 
 .detailed-list__item-description {
@@ -22,9 +46,13 @@
   font-weight: 400;
   color: @gray;
   text-transform: uppercase;
-  padding: 20px 25px;
+  padding: 5px 10px;
   text-align: center;
   margin: 0;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -42,8 +70,12 @@
     flex-direction: column;
     flex-basis: 33%;
     align-items: center;
-    justify-content: center;
-    padding: 30px 35px;
+    justify-content: flex-start;
+    padding: 40px 35px 15px 35px;
+  }
+
+  .detailed-list__item::after {
+    display: none;
   }
 
   .detailed-list__item-title {
@@ -52,10 +84,14 @@
     font-weight: 700;
     color: @black;
     text-transform: uppercase;
-    padding: 0;
+    padding: 0 20px;
     text-align: center;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
+
+    & br {
+      display: block;
+    }
   }
 
   .detailed-list__item-description {
@@ -64,10 +100,14 @@
     font-weight: 400;
     color: @gray;
     text-transform: uppercase;
-    padding: 0;
+    padding: 0 4px;
     margin: 0;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+
+    & br {
+      display: block;
+    }
   }
 }
 
@@ -87,7 +127,7 @@
     flex-basis: 33%;
     align-items: center;
     justify-content: center;
-    padding: 30px 35px;
+    padding: 41px 35px 42px;
   }
 
   .detailed-list__item-title {
@@ -96,10 +136,14 @@
     font-weight: 700;
     color: @black;
     text-transform: uppercase;
-    padding: 0;
+    padding: 4px 10px;
     text-align: center;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
+    & br {
+      display: block;
+    }
   }
 
   .detailed-list__item-description {
@@ -108,9 +152,13 @@
     font-weight: 400;
     color: @gray;
     text-transform: uppercase;
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
     text-align: center;
     margin-bottom: 20px;
+
+    & br {
+      display: block;
+    }
   }
 }

@@ -1,72 +1,157 @@
 .main-header {
-  display: flex;
+  display: block;
+}
+
+.main-header__wrapper {
   height: 56px;
   position: relative;
-  justify-content: space-around;
+  width: 100%;
 }
-
-// .main-header__wrapper--closed {
-//   display: none;
-// }
 
 .main-header__logo {
-  display: block;
+  position: relative;
   margin: 0 auto;
-}
-
-.main-header__toggle-button {
-  border: none;
-  background-color: transparent;
-  width: 23px;
-  height: 22px;
-  margin: 17px 20px;
   padding: 0;
-  cursor: pointer;
+  display: block;
+  width: 185px;
+  height: 96px;
+  background-image: url("../img/header/logotype-sedona.svg");
+  background-repeat: no-repeat;
+}
+
+.main-header__toggle {
+  border: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  width: 24px;
+  height: 20px;
+  top: 17px;
+  right: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
 }
 
-.main-header__toggle-icon {
+.main-header__toggle-open svg {
   fill: @basic;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    fill: fade(@basic, 60%);
+  }
+
+  &:active {
+    fill: fade(@basic, 30%);
+  }
 }
 
-.main-header__toggle-icon:hover {
-  opacity: 0.6;
+.main-header__toggle-close svg {
+  fill: @white;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    fill: fade(@white, 60%);
+  }
+
+  &:active {
+    fill: fade(@white, 30%);
+  }
 }
 
-.main-header__toggle-icon:active {
-  opacity: 0.3;
+.main-header__toggle--closed .main-header__toggle-close {
+  display: none;
+}
+
+.main-header__toggle--opened .main-header__toggle-open {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .main-header {
-    display: flex;
+    display: block;
+  }
+
+  .main-header__wrapper {
     height: 56px;
+    position: relative;
+    width: 100%;
   }
 
   .main-header__logo {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
     display: block;
-    margin: 0;
+    width: 185px;
+    height: 96px;
+    background-image: url("../img/header/logotype-sedona.svg");
+    background-repeat: no-repeat;
+    z-index: 2;
   }
 
-  .main-header__toggle-button {
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__toggle-open svg {
+    display: none;
+  }
+
+  .main-header__toggle-close svg {
+    display: none;
+  }
+
+  .main-header__toggle--closed .main-header__toggle-close {
+    display: none;
+  }
+
+  .main-header__toggle--opened .main-header__toggle-open {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-header {
-    display: flex;
+    display: block;
+  }
+
+  .main-header__wrapper {
     height: 56px;
+    position: relative;
+    width: 100%;
   }
 
   .main-header__logo {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
     display: block;
-    margin: 0;
+    width: 185px;
+    height: 96px;
+    background-image: url("../img/header/logotype-sedona.svg");
+    background-repeat: no-repeat;
   }
 
-  .main-header__toggle-button {
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__toggle-open svg {
+    display: none;
+  }
+
+  .main-header__toggle-close svg {
+    display: none;
+  }
+
+  .main-header__toggle--closed .main-header__toggle-close {
+    display: none;
+  }
+
+  .main-header__toggle--opened .main-header__toggle-open {
     display: none;
   }
 }

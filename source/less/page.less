@@ -3,13 +3,29 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  background-color: @light-gray;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.body-container {
   background-color: @white;
   width: 100%;
-  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .page__body {
+    width: 100%;
+    background-color: @light-gray;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .body-container {
+    background-color: @white;
     width: 100%;
   }
 }
@@ -17,5 +33,15 @@
 @media (min-width: @desktop-width) {
   .page__body {
     width: 100%;
+    background-color: @light-gray;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .body-container {
+    background-color: @white;
+    width: 1200px;
+    box-shadow: 0 10px 5px 5px #e1e1e1;
   }
 }
