@@ -1,7 +1,8 @@
 .main-promo {
-  background-image: url("../img/index/index-background.jpg");
+  background-image: url("../img/promo/mobile-index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: @black;
   min-height: 148px;
   display: flex;
   justify-content: space-between;
@@ -12,6 +13,10 @@
   padding: 0;
   width: 100%;
   margin-bottom: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo/mobile-index-background@2x.jpg");
+  }
 }
 
 .main-promo__icon {
@@ -31,9 +36,10 @@
 
 @media (min-width: @tablet-width) {
   .main-promo {
-    background-image: url("../img/index/index-background.jpg");
+    background-image: url("../img/promo/tablet-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: @black;
     min-height: 290px;
     display: flex;
     justify-content: space-between;
@@ -43,6 +49,10 @@
     padding: 0;
     width: 100%;
     margin-bottom: 35px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/tablet-index-background@2x.jpg");
+    }
   }
 
   .main-promo__icon {
@@ -52,9 +62,10 @@
 
 @media (min-width: @desktop-width) {
   .main-promo {
-    background-image: url("../img/index/index-background.jpg");
+    background-image: url("../img/promo/desktop-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: @black;
     min-height: 301px;
     display: flex;
     justify-content: space-between;
@@ -63,6 +74,10 @@
     margin: 0;
     padding: 0;
     width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/desktop-index-background@2x.jpg");
+    }
   }
 
   .main-promo__icon {
