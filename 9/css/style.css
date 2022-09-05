@@ -416,7 +416,7 @@
 }
 .welcome__wrapper {
   height: 389px;
-  background-image: url("../img/index/index-background.jpg");
+  background-image: url("../img/index/mobile-index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -426,6 +426,11 @@
   justify-content: space-between;
   margin-bottom: 20px;
   width: 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .welcome__wrapper {
+    background-image: url("../img/index/mobile-index-background@2x.jpg");
+  }
 }
 .welcome__logo {
   margin: 0;
@@ -442,7 +447,7 @@
 @media (min-width: 768px) {
   .welcome__wrapper {
     min-height: 518px;
-    background-image: url("../img/index/index-background.jpg");
+    background-image: url("../img/index/tablet-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -466,10 +471,15 @@
     background-position: bottom;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .welcome__wrapper {
+    background-image: url("../img/index/tablet-index-background@2x.jpg");
+  }
+}
 @media (min-width: 1200px) {
   .welcome__wrapper {
     max-height: 518px;
-    background-image: url("../img/index/index-background.jpg");
+    background-image: url("../img/index/desktop-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -491,6 +501,11 @@
     padding: 0;
     background-image: url("../img/index/welcome-decoration-icon.svg");
     background-position: bottom;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .welcome__wrapper {
+    background-image: url("../img/index/desktop-index-background@2x.jpg");
   }
 }
 .reasons__wrapper {
@@ -618,19 +633,29 @@
 .basic-list__item--first {
   min-height: 260px;
   width: 100%;
-  background-image: url("../img/index/photo-city.jpg");
+  background-image: url("../img/index/mobile-photo-city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .basic-list__item--first {
+    background-image: url("../img/index/mobile-photo-city@2x.jpg");
+  }
+}
 .basic-list__item--second {
   min-height: 260px;
   width: 100%;
-  background-image: url("../img/index/photo-bridge.jpg");
+  background-image: url("../img/index/mobile-photo-bridge.jpg");
   background-repeat: no-repeat;
   display: inline-block;
   background-size: cover;
   order: 1;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .basic-list__item--second {
+    background-image: url("../img/index/mobile-photo-bridge@2x.jpg");
+  }
 }
 .basic-list__item-title {
   font-size: 18px;
@@ -682,13 +707,13 @@
   .basic-list__item--first {
     min-height: 256px;
     flex-basis: 67%;
-    background-image: url("../img/index/photo-city.jpg");
+    background-image: url("../img/index/tablet-photo-city.jpg");
     background-repeat: no-repeat;
   }
   .basic-list__item--second {
     min-height: 256px;
     flex-basis: 67%;
-    background-image: url("../img/index/photo-bridge.jpg");
+    background-image: url("../img/index/tablet-photo-bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     order: 0;
@@ -731,6 +756,16 @@
     margin-bottom: 0;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .basic-list__item--first {
+    background-image: url("../img/index/tablet-photo-city@2x.jpg");
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .basic-list__item--second {
+    background-image: url("../img/index/tablet-photo-bridge@2x.jpg");
+  }
+}
 @media (min-width: 1200px) {
   .basic-list {
     min-height: 256px;
@@ -744,14 +779,14 @@
   .basic-list__item--first {
     min-height: 256px;
     flex-basis: 67%;
-    background-image: url("../img/index/photo-city.jpg");
+    background-image: url("../img/index/desktop-photo-city.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
   .basic-list__item--second {
     min-height: 256px;
     flex-basis: 67%;
-    background-image: url("../img/index/photo-bridge.jpg");
+    background-image: url("../img/index/desktop-photo-bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -788,6 +823,16 @@
   }
   .basic-list__item-description br {
     display: block;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .basic-list__item--first {
+    background-image: url("../img/index/desktop-photo-city@2x.jpg");
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .basic-list__item--second {
+    background-image: url("../img/index/desktop-photo-bridge@2x.jpg");
   }
 }
 .entertainment-list {
@@ -1439,9 +1484,10 @@
   }
 }
 .main-promo {
-  background-image: url("../img/index/index-background.jpg");
+  background-image: url("../img/promo/mobile-index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000000;
   min-height: 148px;
   display: flex;
   justify-content: space-between;
@@ -1452,6 +1498,11 @@
   padding: 0;
   width: 100%;
   margin-bottom: 0;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .main-promo {
+    background-image: url("../img/promo/mobile-index-background@2x.jpg");
+  }
 }
 .main-promo__icon {
   padding: 0;
@@ -1468,9 +1519,10 @@
 }
 @media (min-width: 768px) {
   .main-promo {
-    background-image: url("../img/index/index-background.jpg");
+    background-image: url("../img/promo/tablet-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #000000;
     min-height: 290px;
     display: flex;
     justify-content: space-between;
@@ -1485,11 +1537,17 @@
     padding: 0;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-promo {
+    background-image: url("../img/promo/tablet-index-background@2x.jpg");
+  }
+}
 @media (min-width: 1200px) {
   .main-promo {
-    background-image: url("../img/index/index-background.jpg");
+    background-image: url("../img/promo/desktop-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #000000;
     min-height: 301px;
     display: flex;
     justify-content: space-between;
@@ -1501,6 +1559,11 @@
   }
   .main-promo__icon {
     padding: 0;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-promo {
+    background-image: url("../img/promo/desktop-index-background@2x.jpg");
   }
 }
 .gallery {

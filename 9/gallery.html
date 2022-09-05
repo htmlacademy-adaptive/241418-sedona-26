@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
   <link href="./css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/241418-sedona-26/9/">
 </head>
 
@@ -75,8 +79,14 @@
               политике и экономике.</p>
           </div>
           <div class="gallery__item gallery__item--big">
-            <img class="gallery__photo gallery__photo--big" src="./img/gallery/sunny-road.jpg" width="1200" height="400"
-              alt="солнечная дорога.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/gallery/sunny-road-desktop.jpg 1x, ./img/gallery/sunny-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/gallery/sunny-road-tablet.jpg 1x, ./img/gallery/sunny-road-tablet@2x.jpg 2x">
+              <img class="gallery__photo gallery__photo--big" src="./img/gallery/sunny-road-mobile.jpg" width="280"
+                height="280" srcset="./img/gallery/sunny-road-mobile@2x.jpg 2x" alt="солнечная дорога.">
+            </picture>
             <div class="gallery__photo-description">
               <h3 class="gallery__photo-title">неродные просторы</h3>
               <p class="gallery__photo-autor">Автор фото: Борис</p>
@@ -93,7 +103,14 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__photo" src="./img/gallery/flora.jpg" width="1200" height="400" alt="кактус.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/gallery/flora-desktop.jpg 1x, ./img/gallery/flora-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/gallery/flora-tablet.jpg 1x, ./img/gallery/flora-tablet@2x.jpg 2x">
+              <img class="gallery__photo" src="./img/gallery/flora-mobile.jpg" width="280" height="280"
+                srcset="./img/gallery/flora-mobile@2x.jpg 2x" alt="кактус.">
+            </picture>
             <div class="gallery__photo-description">
               <h3 class="gallery__photo-title">местная растительность</h3>
               <p class="gallery__photo-autor">Автор фото: Сергей</p>
@@ -110,8 +127,14 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__photo" src="./img/gallery/road-on-north.jpg" width="1200" height="400"
-              alt="дорога на север.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/gallery/road-on-north-desktop.jpg 1x, ./img/gallery/road-on-north-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/gallery/road-on-north-tablet.jpg 1x, ./img/gallery/road-on-north-tablet@2x.jpg 2x">
+              <img class="gallery__photo" src="./img/gallery/road-on-north-mobile.jpg" width="280" height="280"
+                srcset="./img/gallery/road-on-north-mobile@2x.jpg 2x" alt="кактус.">
+            </picture>
             <div class="gallery__photo-description">
               <h3 class="gallery__photo-title">дорога на север</h3>
               <p class="gallery__photo-autor">Автор фото: Петр</p>
@@ -128,8 +151,14 @@
             </div>
           </div>
           <div class="gallery__item">
-            <img class="gallery__photo" src="./img/gallery/evils-bridge.jpg" width="1200" height="400"
-              alt="мост дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/gallery/evils-bridge-desktop.jpg 1x, ./img/gallery/evils-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/gallery/evils-bridge-tablet.jpg 1x, ./img/gallery/evils-bridge-tablet@2x.jpg 2x">
+              <img class="gallery__photo" src="./img/gallery/evils-bridge-mobile.jpg" width="280" height="280"
+                srcset="./img/gallery/evils-bridge-mobile@2x.jpg 2x" alt="кактус.">
+            </picture>
             <div class="gallery__photo-description">
               <h3 class="gallery__photo-title">мост дьявола</h3>
               <p class="gallery__photo-autor">Автор фото: Антон</p>
@@ -152,8 +181,14 @@
             в
             очередной раз!</p>
           <a class="presentation__video" href="#">
-            <img class="presentation__video-cover" src="./img/gallery/presentation.jpg" width="800" height="500"
-              alt="обложка видео">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/gallery/presentation-desktop.jpg 1x, ./img/gallery/presentation-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/gallery/presentation-tablet.jpg 1x, ./img/gallery/presentation-tablet@2x.jpg 2x">
+              <img class="presentation__video-cover" src="./img/gallery/presentation-mobile.jpg" width="280"
+                height="177" srcset="./img/gallery/presentation-mobile@2x.jpg 2x" alt="кактус.">
+            </picture>
             <svg class="play-icon" width="48" height="55" aria-hidden="true" focusable="false" viewBox="0 0 48 55"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m48 27.02-48 27v-54l48 27Z" fill="#fff" fill-opacity=".7" />
