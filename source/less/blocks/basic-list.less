@@ -18,20 +18,28 @@
 .basic-list__item--first {
   min-height: 260px;
   width: 100%;
-  background-image: url("../img/index/photo-city.jpg");
+  background-image: url("../img/index/mobile-photo-city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/mobile-photo-city@2x.jpg");
+  }
 }
 
 .basic-list__item--second {
   min-height: 260px;
   width: 100%;
-  background-image: url("../img/index/photo-bridge.jpg");
+  background-image: url("../img/index/mobile-photo-bridge.jpg");
   background-repeat: no-repeat;
   display: inline-block;
   background-size: cover;
   order: 1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/mobile-photo-bridge@2x.jpg");
+  }
 }
 
 .basic-list__item-title {
@@ -92,17 +100,25 @@
   .basic-list__item--first {
     min-height: 256px;
     flex-basis: 67%;
-    background-image: url("../img/index/photo-city.jpg");
+    background-image: url("../img/index/tablet-photo-city.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/tablet-photo-city@2x.jpg");
+    }
   }
 
   .basic-list__item--second {
     min-height: 256px;
     flex-basis: 67%;
-    background-image: url("../img/index/photo-bridge.jpg");
+    background-image: url("../img/index/tablet-photo-bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     order: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/tablet-photo-bridge@2x.jpg");
+    }
   }
 
   .basic-list__item--noimage {
@@ -163,17 +179,25 @@
   .basic-list__item--first {
     min-height: 256px;
     flex-basis: 67%;
-    background-image: url("../img/index/photo-city.jpg");
+    background-image: url("../img/index/desktop-photo-city.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/desktop-photo-city@2x.jpg");
+    }
   }
 
   .basic-list__item--second {
     min-height: 256px;
     flex-basis: 67%;
-    background-image: url("../img/index/photo-bridge.jpg");
+    background-image: url("../img/index/desktop-photo-bridge.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/desktop-photo-bridge@2x.jpg");
+    }
   }
 
   .basic-list__item--noimage {

@@ -1,6 +1,6 @@
 .welcome__wrapper {
   height: 389px;
-  background-image: url("../img/index/index-background.jpg");
+  background-image: url("../img/index/mobile-index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -10,6 +10,10 @@
   justify-content: space-between;
   margin-bottom: 20px;
   width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/mobile-index-background@2x.jpg");
+  }
 }
 
 .welcome__logo {
@@ -29,7 +33,7 @@
 @media (min-width: @tablet-width) {
   .welcome__wrapper {
     min-height: 518px;
-    background-image: url("../img/index/index-background.jpg");
+    background-image: url("../img/index/tablet-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -39,6 +43,10 @@
     justify-content: space-between;
     margin-bottom: 20px;
     width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/tablet-index-background@2x.jpg");
+    }
   }
 
   .welcome__logo {
@@ -59,7 +67,7 @@
 @media (min-width: @desktop-width) {
   .welcome__wrapper {
     max-height: 518px;
-    background-image: url("../img/index/index-background.jpg");
+    background-image: url("../img/index/desktop-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -69,6 +77,10 @@
     justify-content: space-between;
     margin-bottom: 20px;
     width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/desktop-index-background@2x.jpg");
+    }
   }
 
   .welcome__logo {
