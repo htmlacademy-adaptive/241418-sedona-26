@@ -1,3 +1,7 @@
+let headerMain = document.querySelector('.main-header__wrapper');
+
+headerMain.classList.remove('main-header__wrapper--nojs');
+
 let navMain = document.querySelector('.main-nav');
 let headerToggle = document.querySelector('.main-header__toggle');
 

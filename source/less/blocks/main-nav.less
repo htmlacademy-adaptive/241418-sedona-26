@@ -1,8 +1,13 @@
 .main-nav {
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 1;
+}
+
+.main-header__wrapper--nojs .main-nav {
+  position: relative;
 }
 
 .main-nav--closed {
@@ -21,6 +26,10 @@
     top: 0;
   }
 
+  .main-header__wrapper--nojs .main-nav {
+    position: absolute;
+  }
+
   .main-nav--closed {
     transform: none;
   }
@@ -36,6 +45,10 @@
     width: 100%;
     left: 0;
     top: 0;
+  }
+
+  .main-header__wrapper--nojs .main-nav {
+    position: absolute;
   }
 
   .main-nav--closed {
