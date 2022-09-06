@@ -15,7 +15,7 @@
 <body class="page__body">
   <div class="body-container">
     <header class="main-header">
-      <div class="main-header__wrapper main-header__wrapper--closed">
+      <div class="main-header__wrapper main-header__wrapper--nojs">
         <a class="main-header__logo" href="index.html">
         </a>
         <button class="main-header__toggle main-header__toggle--closed" type="button">
@@ -32,7 +32,8 @@
             </svg>
           </span>
         </button>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <!-- добавить main-nav--closed и раскоментить js для работы меню -->
+        <nav class="main-nav main-nav--nojs">
           <ul class="main-nav__list">
             <li class="list-item">
               <a href="/">
@@ -218,7 +219,7 @@
           </div>
         </div>
       </footer>
-      <script src="./js/script.js"></script>
+      <!-- <script src="./js/script.js"></script> -->
       <div class="modal">
         <div class="modal__wrapper--error">
           <h2 class="modal__title">что-то пошло не так!</h2>
