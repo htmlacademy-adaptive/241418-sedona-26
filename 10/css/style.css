@@ -438,6 +438,7 @@
 .welcome__wrapper {
   height: 389px;
   background-image: url("../img/index/mobile-index-background.jpg");
+  background-color: #81b3d2;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -469,6 +470,7 @@
   .welcome__wrapper {
     min-height: 518px;
     background-image: url("../img/index/tablet-index-background.jpg");
+    background-color: #81b3d2;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -501,6 +503,7 @@
   .welcome__wrapper {
     max-height: 518px;
     background-image: url("../img/index/desktop-index-background.jpg");
+    background-color: #81b3d2;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -655,6 +658,7 @@
   min-height: 260px;
   width: 100%;
   background-image: url("../img/index/mobile-photo-city.jpg");
+  background-color: #81b3d2;
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -668,6 +672,7 @@
   min-height: 260px;
   width: 100%;
   background-image: url("../img/index/mobile-photo-bridge.jpg");
+  background-color: #81b3d2;
   background-repeat: no-repeat;
   display: inline-block;
   background-size: cover;
@@ -729,12 +734,14 @@
     min-height: 256px;
     flex-basis: 67%;
     background-image: url("../img/index/tablet-photo-city.jpg");
+    background-color: #81b3d2;
     background-repeat: no-repeat;
   }
   .basic-list__item--second {
     min-height: 256px;
     flex-basis: 67%;
     background-image: url("../img/index/tablet-photo-bridge.jpg");
+    background-color: #81b3d2;
     background-repeat: no-repeat;
     background-size: cover;
     order: 0;
@@ -801,6 +808,7 @@
     min-height: 256px;
     flex-basis: 67%;
     background-image: url("../img/index/desktop-photo-city.jpg");
+    background-color: #81b3d2;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -808,6 +816,7 @@
     min-height: 256px;
     flex-basis: 67%;
     background-image: url("../img/index/desktop-photo-bridge.jpg");
+    background-color: #81b3d2;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1508,7 +1517,7 @@
   background-image: url("../img/promo/mobile-index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #000000;
+  background-color: #81b3d2;
   min-height: 148px;
   display: flex;
   justify-content: space-between;
@@ -1543,7 +1552,7 @@
     background-image: url("../img/promo/tablet-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000000;
+    background-color: #81b3d2;
     min-height: 290px;
     display: flex;
     justify-content: space-between;
@@ -1568,7 +1577,7 @@
     background-image: url("../img/promo/desktop-index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000000;
+    background-color: #81b3d2;
     min-height: 301px;
     display: flex;
     justify-content: space-between;
