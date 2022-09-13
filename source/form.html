@@ -108,7 +108,7 @@
                 <label class="form__field-label" for="email-id">электронная почта*:</label>
                 <input class="form__field-input" type="text" id="email-id" name="email" placeholder="Введите e-mail"
                   required>
-                <span class="form__field-background-icon--mail"></span>
+                <span class="form__field-background-icon form__field-background-icon--mail"></span>
               </div>
             </fieldset>
             <fieldset class="form__section form__section--radio">
@@ -206,20 +206,20 @@
         </div>
       </footer>
       <!-- <script src="./js/script.js"></script> -->
-      <div class="modal">
-        <div class="modal__wrapper--error">
+      <!-- <div class="modal">
+        <div class="modal__wrapper modal__wrapper--error">
           <h2 class="modal__title">что-то пошло не так!</h2>
           <p class="modal__description">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="modal__button component-button" type="button">ок</button>
+          <button class="modal__button modal__button--error component-button" type="button">ок</button>
         </div>
-      </div>
+      </div> -->
       <div class="modal">
-        <div class="modal__wrapper--success">
+        <div class="modal__wrapper modal__wrapper--success">
           <h2 class="modal__title">ваш отзыв отправлен!</h2>
-          <p class="modal__description">спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы
+          <p class="modal__description modal__description--success">спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы
             опубликуем его на сайте.</p>
           <div class="modal__sent">
-            <button class="modal__button component-button" type="button">закрыть окно</button>
+            <button class="modal__button modal__button--success component-button" type="button">закрыть окно</button>
           </div>
         </div>
       </div>
