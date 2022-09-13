@@ -9,13 +9,15 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicon/apple-icon-180x180.png">
+  <link rel="preload" href="/source/fonts/ptsans.woff2" as="font">
 </head>
 
 <body class="page__body">
-  <div class="body-container">
+  <div class="page__body-container">
     <header class="main-header">
       <div class="main-header__wrapper main-header__wrapper--nojs">
         <a class="main-header__logo" href="index.html">
+          <span class="visually-hidden">логотип седона</span>
         </a>
         <button class="main-header__toggle main-header__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -31,8 +33,7 @@
             </svg>
           </span>
         </button>
-        <!-- добавить main-nav--closed и раскоментить js для работы меню -->
-        <nav class="main-nav main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
             <li class="list-item">
               <a href="/">
@@ -96,7 +97,9 @@
               <h3 class="gallery__photo-title">неродные просторы</h3>
               <p class="gallery__photo-autor">Автор фото: Борис</p>
               <div class="gallery__photo-counter">
-                <button class="gallery__like" type="button"><svg class="gallery__like-icon" width="23" height="21"
+                <button class="gallery__like" type="button">
+                  <span class="visually-hidden">кнопка лайк</span>
+                  <svg class="gallery__like-icon" width="23" height="21"
                     aria-hidden="true" focusable="false" viewBox="0 0 23 21" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -126,7 +129,9 @@
               <h3 class="gallery__photo-title">местная растительность</h3>
               <p class="gallery__photo-autor">Автор фото: Сергей</p>
               <div class="gallery__photo-counter">
-                <button class="gallery__like" type="button"><svg class="gallery__like-icon" width="23" height="21"
+                <button class="gallery__like" type="button">
+                  <span class="visually-hidden">кнопка лайк</span>
+                  <svg class="gallery__like-icon" width="23" height="21"
                     aria-hidden="true" focusable="false" viewBox="0 0 23 21" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -156,7 +161,9 @@
               <h3 class="gallery__photo-title">дорога на север</h3>
               <p class="gallery__photo-autor">Автор фото: Петр</p>
               <div class="gallery__photo-counter">
-                <button class="gallery__like" type="button"><svg class="gallery__like-icon" width="23" height="21"
+                <button class="gallery__like" type="button">
+                  <span class="visually-hidden">кнопка лайк</span>
+                  <svg class="gallery__like-icon" width="23" height="21"
                     aria-hidden="true" focusable="false" viewBox="0 0 23 21" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -186,7 +193,9 @@
               <h3 class="gallery__photo-title">мост дьявола</h3>
               <p class="gallery__photo-autor">Автор фото: Антон</p>
               <div class="gallery__photo-counter">
-                <button class="gallery__like" type="button"><svg class="gallery__like-icon" width="23" height="21"
+                <button class="gallery__like" type="button">
+                  <span class="visually-hidden">кнопка лайк</span>
+                  <svg class="gallery__like-icon" width="23" height="21"
                     aria-hidden="true" focusable="false" viewBox="0 0 23 21" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -203,26 +212,8 @@
           <p class="presentation__description">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
             в
             очередной раз!</p>
-          <a class="presentation__video" href="#">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/gallery/presentation-desktop.webp 1x, ./img/gallery/presentation-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="./img/gallery/presentation-tablet.webp 1x, ./img/gallery/presentation-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="./img/gallery/presentation-mobile.webp 1x, ./img/gallery/presentation-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)"
-                srcset="./img/gallery/presentation-desktop.jpg 1x, ./img/gallery/presentation-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/gallery/presentation-tablet.jpg 1x, ./img/gallery/presentation-tablet@2x.jpg 2x">
-              <img class="presentation__video-cover" src="./img/gallery/presentation-mobile.jpg" width="280"
-                height="177" srcset="./img/gallery/presentation-mobile@2x.jpg 2x" alt="кактус.">
-            </picture>
-            <svg class="play-icon" width="48" height="55" aria-hidden="true" focusable="false" viewBox="0 0 48 55"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="m48 27.02-48 27v-54l48 27Z" fill="#fff" fill-opacity=".7" />
-            </svg>
-          </a>
+          <video controls class="presentation__video" src="#" poster="./img/gallery/presentation-desktop.jpg">
+          </video>
         </div>
       </section>
     </main>
@@ -235,6 +226,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk component-button">
+                <span class="visually-hidden">ссылка на страницу вконтакте</span>
                 <svg class="social__link-icon" width="24" height="24">
                   <use xlink:href="img/sprite.svg#vk-icon"></use>
                 </svg>
@@ -242,6 +234,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram component-button">
+                <span class="visually-hidden">ссылка на канал телеграм</span>
                 <svg class="social__link-icon" width="24" height="24">
                   <use xlink:href="img/sprite.svg#telegram-icon"></use>
                 </svg>
@@ -249,6 +242,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube component-button">
+              <span class="visually-hidden">ссылка на сайт ютюб</span>
                 <svg class="social__link-icon" width="24" height="24">
                   <use xlink:href="img/sprite.svg#youtube-icon"></use>
                 </svg>
@@ -257,7 +251,8 @@
           </ul>
         </div>
         <div class="developers">
-          <a class="developers__link developers__link--htmlacademy">разработано
+          <a class="developers__link developers__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">разработано
+            <span class="visually-hidden">ссылка на сайт разработчиков</span>
             <svg class="developers__icon" width="27" height="35" aria-hidden="true" focusable="false"
               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -267,7 +262,7 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/script.js"></script>
   </div>
 </body>
 

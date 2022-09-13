@@ -3,10 +3,28 @@
   padding: 0 20px;
 }
 
+.review__form {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (min-width: @tablet-width) {
   .review__wrapper {
     margin: 0;
     padding: 5px 60px;
+  }
+
+  .review__form {
+    width: 648px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
@@ -14,5 +32,15 @@
   .review__wrapper {
     margin: 0;
     padding: 5px 120px;
+  }
+
+  .review__form {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 960px;
   }
 }
