@@ -9,13 +9,15 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicon/apple-icon-180x180.png">
+  <link rel="preload" href="/source/fonts/ptsans.woff2" as="font">
 </head>
 
 <body class="page__body">
-  <div class="body-container">
+  <div class="page__body-container">
     <header class="main-header">
       <div class="main-header__wrapper main-header__wrapper--nojs">
         <a class="main-header__logo" href="index.html">
+          <span class="visually-hidden">логотип седона</span>
         </a>
         <button class="main-header__toggle main-header__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -31,8 +33,7 @@
             </svg>
           </span>
         </button>
-        <!-- добавить main-nav--closed и раскоментить js для работы меню -->
-        <nav class="main-nav main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list">
             <li class="list-item list-item--current">
               <a href="/">
@@ -189,6 +190,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk component-button">
+                <span class="visually-hidden">ссылка на страницу вконтакте</span>
                 <svg class="social__link-icon" width="24" height="24">
                   <use xlink:href="img/sprite.svg#vk-icon"></use>
                 </svg>
@@ -196,6 +198,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram component-button">
+                <span class="visually-hidden">ссылка на канал телеграм</span>
                 <svg class="social__link-icon" width="24" height="24">
                   <use xlink:href="img/sprite.svg#telegram-icon"></use>
                 </svg>
@@ -203,6 +206,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube component-button">
+              <span class="visually-hidden">ссылка на сайт ютюб</span>
                 <svg class="social__link-icon" width="24" height="24">
                   <use xlink:href="img/sprite.svg#youtube-icon"></use>
                 </svg>
@@ -211,7 +215,8 @@
           </ul>
         </div>
         <div class="developers">
-          <a class="developers__link developers__link--htmlacademy" href="https://www.htmlacademy.ru">разработано
+          <a class="developers__link developers__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">разработано
+            <span class="visually-hidden">ссылка на сайт разработчиков</span>
             <svg class="developers__icon" width="27" height="35" aria-hidden="true" focusable="false"
               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -221,7 +226,7 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/script.js"></script>
   </div>
 </body>
 

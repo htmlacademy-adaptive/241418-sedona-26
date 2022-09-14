@@ -1,11 +1,3 @@
-.review__form {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .form__section {
   margin: 0;
   padding: 0;
@@ -261,6 +253,10 @@
   background-position: 15px 15px;
 }
 
+.form__checkbox-input:focus + .form__checkbox-control {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
 .form__field-input--text {
   min-height: 150px;
   background-color: @light-gray;
@@ -296,16 +292,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .review__form {
-    width: 648px;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
   .form__section {
     margin: 0 auto;
     padding: 0;
@@ -597,6 +583,10 @@
     background-position: 15px 15px;
   }
 
+  .form__checkbox-input:focus + .form__checkbox-control {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
+
   .form__field-input--text {
     min-height: 160px;
     min-width: 100%;
@@ -638,16 +628,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .review__form {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 960px;
-  }
-
   .form__section {
     margin: 0 auto;
     padding: 0;

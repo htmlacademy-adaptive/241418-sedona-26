@@ -6,16 +6,38 @@
   z-index: 1;
 }
 
-.main-header__wrapper--nojs .main-nav {
-  position: relative;
-}
-
 .main-nav--closed {
   transform: translateY(-100%);
 }
 
+.main-nav--closed.main-nav--nojs {
+  transform: none;
+}
+
 .main-nav--opened {
   transform: none;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list a {
+  position: relative;
+  display: block;
+  padding: 17px 20px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: @white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: @basic;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 @media (min-width: @tablet-width) {
@@ -26,16 +48,49 @@
     top: 0;
   }
 
-  .main-header__wrapper--nojs .main-nav {
-    position: absolute;
-  }
-
   .main-nav--closed {
     transform: none;
   }
 
   .main-nav--opened {
     transform: none;
+  }
+
+  .main-nav__list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 145px 145px auto 145px 145px;
+    min-height: 56px;
+    background-color: @white;
+    align-items: center;
+  }
+
+  .main-nav__list a {
+    position: relative;
+    display: block;
+    margin: 0 5px;
+    padding: 0;
+    padding-bottom: 17px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: inherit;
+    box-shadow: none;
+  }
+
+  .main-nav__list a:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__list a:hover {
+    color: @basic;
   }
 }
 
@@ -47,15 +102,48 @@
     top: 0;
   }
 
-  .main-header__wrapper--nojs .main-nav {
-    position: absolute;
-  }
-
   .main-nav--closed {
     transform: none;
   }
 
   .main-nav--opened {
     transform: none;
+  }
+
+  .main-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 240px 240px auto 240px 240px;
+    min-height: 56px;
+    background-color: @white;
+    align-items: center;
+  }
+
+  .main-nav__list a {
+    position: relative;
+    display: block;
+    margin: 0 40px;
+    padding: 0;
+    padding-bottom: 13px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: inherit;
+    box-shadow: none;
+  }
+
+  .main-nav__list a:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__list a:hover {
+    color: @basic;
   }
 }
