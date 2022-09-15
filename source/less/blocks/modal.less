@@ -15,8 +15,8 @@
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
-  padding: 45px 10px 35px;
-  top: 116px;
+  padding: 32px 10px 35px;
+  top: 97px;
   left: 0;
   right: 0;
   content: "";
@@ -31,8 +31,8 @@
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
-  padding: 45px 0 0;
-  top: 402px;
+  padding: 22px 0 0;
+  top: 390px;
   left: 0;
   right: 0;
   content: "";
@@ -46,10 +46,19 @@
   font-weight: 700;
   color: @black;
   text-transform: uppercase;
-  padding: 10px 10px 5px 0;
-  margin: 0;
-  margin-bottom: 20px;
   text-align: center;
+}
+
+.modal__title--error {
+  padding: 16px 10px 5px 10px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.modal__title--success {
+  padding: 16px 10px 5px 10px;
+  margin: 0;
+  margin-bottom: 11px;
 }
 
 .modal__description {
@@ -58,7 +67,7 @@
   font-weight: 400;
   color: @gray;
   text-transform: uppercase;
-  padding: 10px 10px 5px 0;
+  padding: 10px 31px 5px 32px;
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
@@ -66,15 +75,20 @@
 
 .modal__description--success {
   padding: 10px 45px 5px 45px;
+  margin-bottom: 45px;
 }
 
 .modal__button {
+  margin-top: 2px;
   border: none;
 }
 
 .modal__button--success {
-  min-width: 180px;
+  min-width: 280px;
   padding: 16px 55px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .modal__button--error {
@@ -110,7 +124,7 @@
     margin: 0 auto;
     justify-content: center;
     padding: 45px 60px 35px 60px;
-    top: 283px;
+    top: 272px;
     left: 0;
     right: 0;
     content: "";
@@ -126,8 +140,8 @@
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    padding: 45px 0 0;
-    top: 162px;
+    padding: 35px 0 0;
+    top: 145px;
     left: 0;
     right: 0;
     content: "";
@@ -140,10 +154,19 @@
     font-weight: 700;
     color: @black;
     text-transform: uppercase;
+    text-align: center;
+  }
+
+  .modal__title--success {
+    margin: 0;
+    margin-bottom: 16px;
     padding: 10px 15px 5px 15px;
+  }
+
+  .modal__title--error {
+    padding: 7px 15px 5px 15px;
     margin: 0;
     margin-bottom: 15px;
-    text-align: center;
   }
 
   .modal__description {
@@ -152,18 +175,26 @@
     font-weight: 400;
     color: @gray;
     text-transform: uppercase;
-    padding: 0 0 5px 0;
-    margin: 0;
-    margin-bottom: 46px;
     text-align: center;
   }
 
   .modal__description--success {
     padding: 0 91px 5px 91px;
+    margin: 0;
+    margin-bottom: 46px;
+  }
+
+  .modal__description--error {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0 0 5px 0;
   }
 
   .modal__button {
     border: none;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
   }
 
   .modal__button--success {
@@ -175,6 +206,7 @@
     border: none;
     width: 272px;
     padding: 16px 55px;
+    margin-bottom: 16px;
   }
 
   .modal__sent {
@@ -205,9 +237,9 @@
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    padding: 45px 60px 35px 60px;
-    top: 244px;
-    left: 0;
+    padding: 37px 60px 35px 60px;
+    top: 311px;
+    left: -80px;
     right: 0;
     content: "";
     width: 400px;
@@ -222,9 +254,9 @@
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    padding: 45px 0 0;
-    top: 145px;
-    left: 0;
+    padding: 32px 0 0;
+    top: 212px;
+    left: -81px;
     right: 0;
     content: "";
     width: 640px;
@@ -236,10 +268,19 @@
     font-weight: 700;
     color: @black;
     text-transform: uppercase;
+    text-align: center;
+  }
+
+  .modal__title--success {
     padding: 10px 15px 5px 15px;
     margin: 0;
-    margin-bottom: 15px;
-    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .modal__title--error {
+    padding: 10px 15px 5px 15px;
+    margin: 0;
+    margin-bottom: 20px;
   }
 
   .modal__description {
@@ -248,14 +289,19 @@
     font-weight: 400;
     color: @gray;
     text-transform: uppercase;
-    padding: 0 0 5px 0;
-    margin: 0;
-    margin-bottom: 46px;
     text-align: center;
   }
 
   .modal__description--success {
-    padding: 0 91px 5px 91px;
+    padding: 0 80px 5px 91px;
+    margin: 0;
+    margin-bottom: 46px;
+  }
+
+  .modal__description--error {
+    padding: 0 0 5px 0;
+    margin: 0;
+    margin-bottom: 40px;
   }
 
   .modal__button {
