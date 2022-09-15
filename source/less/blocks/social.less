@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 15px 20px;
+  padding: 23px 20px 14px 30px;
 }
 
 .social__item {
@@ -29,4 +29,39 @@
 
 .social__link:focus {
   color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 18px 20px 14px 16px;
+  }
+
+  .social__item {
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    margin-right: 6px;
+  }
+
+  .social__link {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social__link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .social__link:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
